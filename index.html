@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style1.css">
+        <div class="main">
+            <title>Survey Form</title>
+            <h1 id="title">Technology Career Survey</h1>
+            <p id="description">This free Tech Career Test takes 3 minutes and requires no registration.</p>
+            <!-- 1. User Stories 2. Create Wireframe 3. HTML 4. CSS 5. Test -->
+
+            <!-- 1. id="title" 2. id="description" 3. id="survey-form" 4. id="name" 5.
+            id="email" 6. see an HTML5 validation error. 7. id="number" 8-9. see an HTML5
+            validation error. 10. id="name-label", id="email-label", and id="number-label".
+            11. see placeholder text that gives me a description or instructions for each
+            field. 12. id="dropdown" 13. Inside the form element, I can select a field from
+            one or more groups of radio buttons. Each group should be grouped using the name
+            attribute. 14. Inside the form element, I can select several fields from a
+            series of checkboxes, each of which must have a value attribute. 15. Inside the
+            form element, I am presented with a textarea at the end for additional comments.
+            16. Inside the form element, I am presented with a button with id="submit" to
+            submit all my inputs. -->
+        </head>
+        <body>
+            <div class="main-content">
+                <div class="form-content">
+                    <form id="survey-form">
+                        <label for="name" id="name-label">Name</label>
+                        <input id="name" type="text" required="required" placeholder="Enter your name"></input><br><br>
+                        <label for="email" id="email-label">Email</label>
+                        <input
+                            id="email"
+                            type="email"
+                            required="required"
+                            placeholder="Enter your email"></input><br><br>
+                        <label for="number" id="number-label">Number</label>
+                        <input
+                            id="number"
+                            type="number"
+                            min="1"
+                            max="100"
+                            placeholder="Enter your rate from 1 to 100"></input><br><br>
+                        <label for="dropdown">Which career path do you wish to persue?</label><br><br>
+                        <select id="dropdown">
+                            <option value="full-stack developer">FullStack Developer</option>
+                            <option value="web-developer">Web Developer
+                            </option>
+                            <option value="software-engineer">Software Engineer
+                            </option>
+                            <option value="freelancer programmer">Freelancer Programmer
+                            </option>
+                        </select><br><br><br><br><br><br><br><br>
+                        <fieldset>
+                            <legend>How many years of programming experience do you have?</legend>
+                            <input
+                                type="radio"
+                                name="action"
+                                checked="checked"
+                                id="0-8 months"
+                                value="0-8 months">
+                            <label for="0-8 months">0-8 months</label><br><br>
+                            <input
+                                type="radio"
+                                name="action"
+                                checked="checked"
+                                id="1-2 years"
+                                value="1-2 years">
+                            <label for="1-2 years">1-2 years</label><br><br>
+                            <input
+                                type="radio"
+                                name="action"
+                                checked="checked"
+                                id="3+ years"
+                                value="3+ years">
+                            <label for="3+ years">More than 3 years</label><br><br>
+                        </fieldset><br><br>
+                        <legend>Select the programming languages that you have the most experience in:</legend><br>
+                        <input type="checkbox" id="PHP" name="PHP" value="PHP">
+                        <label for="PHP">PHP</label><br><br>
+                        <input type="checkbox" id="Java" name="Java" value="Java">
+                        <label for="Java">Java</label><br><br>
+                        <input type="checkbox" id="Python" name="Python" value="Python">
+                        <label for="Python">Python</label><br><br>
+                        <input type="checkbox" id="C++" name="C++" value="C++">
+                        <label for="C++">C++</label><br><br><br>
+                        <legend>Additional information</legend><br>
+                        <textarea name="message" rows="25" cols="80" required="required">Please provide any information that you think might be helpful for us to know</textarea><br><br><br>
+                        <input type="submit" id="submit" value="Submit">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
